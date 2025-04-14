@@ -2,15 +2,11 @@
 
 A simple Chrome Extension that lets you _search_ and _delete_ your browser history using a **keyword**. No fluff, just clean, focused productivity.
 
----
-
 ## 🚀 Features
 
 - 🔎 Search your Chrome browsing history by keyword
 - 🧼 Instantly delete all matching entries (based on URL or title)
 - 📦 Lightweight and fast — perfect for quick cleaning
-
----
 
 ## 🛠 How It Works
 
@@ -20,7 +16,7 @@ A simple Chrome Extension that lets you _search_ and _delete_ your browser histo
    - An input field to enter the keyword.
    - A button to trigger deletion.
 
-2. **Logic (popup.js)**
+2. **Logic (App.tsx)**
 
    - Listens for a click on the delete button.
    - Searches your history using `chrome.history.search()`.
@@ -30,27 +26,35 @@ A simple Chrome Extension that lets you _search_ and _delete_ your browser histo
 3. **Permissions**
    - Requires `"history"` permission in `manifest.json`.
 
----
-
 ## 🧪 Getting Started
 
 1. **Clone the repo or download the files**
 
-2. **Load the extension into Chrome:**
+2. **Install Dependencies:**
+
+   ```bash
+      pnpm install
+   ```
+
+3. **Build your project:**
+
+   ```bash
+      pnpm build
+   ```
+
+4. **Load the extension into Chrome:**
 
    - Go to `chrome://extensions/`
    - Enable **Developer mode**
    - Click **Load unpacked**
-   - Select the directory containing this project
+   - Select the `dist` folder inside your project directory
 
-3. **Use the extension:**
+5. **Use the extension:**
 
    - Click the extension icon
    - Type a keyword (e.g., `twitter`)
    - Hit **Delete Matches**
    - Watch your history get ✨yeeted✨
-
----
 
 ## 📜 Manifest (v3)
 
@@ -60,11 +64,11 @@ A simple Chrome Extension that lets you _search_ and _delete_ your browser histo
 {
   "manifest_version": 3,
   "name": "History Cleaner",
-  "version": "1.0",
+  "version": "2.0",
   "description": "A Chrome extension to clear browsing history.",
   "permissions": ["history"],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "index.html"
   }
 }
 ```
@@ -74,8 +78,6 @@ A simple Chrome Extension that lets you _search_ and _delete_ your browser histo
 This extension deletes history permanently.  
 There is **no undo**, so be sure before you click!
 
----
-
 ## 💡 Ideas for Future Updates
 
 - 🔁 Add option to delete history from a specific time range
@@ -83,22 +85,16 @@ There is **no undo**, so be sure before you click!
 - 🎨 Dark mode popup UI
 - 🕵️‍♂️ Keyword suggestions based on frequent visits
 
----
-
 ## 🧑‍💻 Built With
 
-- HTML
-- Vanilla JS
+- ReactJS
+- TailwindCSS
 - Chrome Extensions API (Manifest V3)
-
----
 
 ## 🙌 Contributing
 
 Feel free to fork and suggest improvements. PRs welcome!
 
----
-
 ## 📄 License
 
-MIT License
+This project is licensed under the [MIT License](./LICENSE).
