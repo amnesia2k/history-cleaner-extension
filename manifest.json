@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "History Cleaner",
+  "version": "1.0",
+  "description": "A Chrome extension to clear browsing history.",
+  "permissions": ["history"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
