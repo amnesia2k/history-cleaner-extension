@@ -12,15 +12,6 @@ A simple Chrome Extension that lets you _search_ and _delete_ your browser histo
 
 ---
 
-## 📁 File Structure
-
-/history-cleaner
-├── popup.html # UI for the extension popup
-├── popup.js # Logic to handle search & deletion
-├── manifest.json # Chrome Extension config
-
----
-
 ## 🛠 How It Works
 
 1. **User Interface**  
