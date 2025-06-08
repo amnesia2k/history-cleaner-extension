@@ -65,7 +65,7 @@ export default function App() {
 
   return (
     <div className="w-80 p-4 bg-white text-center font-sans">
-      <h1 className="text-xl font-bold mb-2">🧹 History Cleaner</h1>
+      <h1 className="text-xl font-bold mb-2">No Evidence</h1>
 
       <input
         className="w-full px-3 py-2 border border-gray-300 rounded mb-3 text-sm"

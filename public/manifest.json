@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "History Cleaner",
+  "name": "No Evidence",
   "version": "2.0",
   "description": "A Chrome extension to clear browsing history.",
   "permissions": ["history"],
